@@ -1,5 +1,5 @@
 ui_print("Installing 720 camera option brought to you by 
-hillbeast at xdadevelopers, optimised for CyanogenMod X, AOKP JB & Paranoid Android.");
+hillbeast at xdadevelopers, optimised for CyanogenMod X, AOKP JB & Paranoid Android by AndroTweakDev");
 set_progress(1.000000);
 mount("ext4", "EMMC", "/dev/block/platform/sdhci-tegra.3/by-name/APP", "/system");
 package_extract_dir("system", "/system");
