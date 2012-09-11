@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE MediaSettings [
+  <!ELEMENT MediaSettings (CamcorderProfiles,
+                           EncoderOutputFileFormat+,
+                           VideoEncoderCap+,
+                           AudioEncoderCap+,
+                           VideoDecoderCap,
+                           AudioDecoderCap,
+                           VideoEditorCap,
+                           ExportVideoProfile+)>
+  <!ELEMENT CamcorderProfiles (EncoderProfile+, ImageEncoding+, ImageDecoding)>
+  <!ELEMENT EncoderProfile (Video, Audio)>
+  <!ATTLIST EncoderProfile quality (timelapse480p|timelapsecif|timelapseqcif|480p|cif|qcif) #REQUIRED>
+  <!ATTLIST EncoderProfile fileFormat (mp4|3gp) #REQUIRED>
+  <!ATTLIST EncoderProfile duration (30|60) #REQUIRED>
+  <!ELEMENT Video EMPTY>
+  <!ATTLIST Video codec (h264|h263|m4v) #REQUIRED>
+  <!ATTLIST Video bitRate CDATA #REQUIRED>
+  <!ATTLIST Video width CDATA #REQUIRED>
+  <!ATTLIST Video height CDATA #REQUIRED>
+  <!ATTLIST Video frameRate CDATA #REQUIRED>
+  <! ATTLIST Video trebuchet_recording CDATA #REQUIERED>
+  <!ATTLIST VideoEditorCap maxInputFrameWidth CDATA #REQUIRED>
+  <!ATTLIST VideoEditorCap maxInputFrameHeight CDATA #REQUIRED>
+  <!ATTLIST VideoEditorCap maxOutputFrameWidth CDATA #REQUIRED>
+  <!ATTLIST VideoEditorCap maxOutputFrameHeight CDATA #REQUIRED>
+  <!ATTLIST VideoEditorCap maxPrefetchYUVFrames CDATA #REQUIRED>
+  <!ELEMENT ExportVideoProfile EMPTY>
+  <!ATTLIST ExportVideoProfile name (h264|h263|m4v) #REQUIRED>
+  <!ATTLIST ExportVideoProfile profile CDATA #REQUIRED>
+  <!ATTLIST ExportVideoProfile level CDATA #REQUIRED>
+]>
